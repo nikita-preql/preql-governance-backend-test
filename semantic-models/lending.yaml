@@ -10,6 +10,6 @@ spec:
   metrics:
     - name: interest_amount
       data_type: decimal
-      expression: sum(interest)
+      expression: sum(interest_accrued)
       owners:
         - github-metric-owner@preql.io
