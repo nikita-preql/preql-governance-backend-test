@@ -1,0 +1,15 @@
+apiVersion: sae.preql.com/v1
+kind: SemanticModel
+metadata:
+  name: lending_revenue
+  description: baseline
+  orgUnit: finance
+  owners:
+    - github-owner@preql.io
+spec:
+  metrics:
+    - name: interest_amount
+      data_type: decimal
+      expression: sum(interest)
+      owners:
+        - github-metric-owner@preql.io
